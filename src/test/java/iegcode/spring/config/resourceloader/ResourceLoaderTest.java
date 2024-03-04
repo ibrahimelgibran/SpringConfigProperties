@@ -11,7 +11,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 
-@SpringBootTest
+@SpringBootTest(classes = ResourceLoaderTest.TestApplication.class)
 public class ResourceLoaderTest {
 
     @Autowired
