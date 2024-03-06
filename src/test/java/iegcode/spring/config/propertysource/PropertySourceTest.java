@@ -10,7 +10,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 import org.springframework.stereotype.Component;
+import org.springframework.test.context.TestPropertySource;
+import org.springframework.test.context.TestPropertySources;
 
+@TestPropertySources({
+        @TestPropertySource("classpath:/test.properties")
+})
 @SpringBootTest(classes = PropertySourceTest.TestApplication.class)
 public class PropertySourceTest {
 
